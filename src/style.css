@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#particles canvas {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+#div-points{
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid-container {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  .grid-item {
+    background-color: #f0f0f0c9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .grid-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .grid-item h3 {
+    margin: 12px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+  }
+  
+  .grid-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .grid-item li {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 4px 0;
+    color: black;
+    text-align: left;
+  }
+
+ 
+  
+  /* Aturan responsif untuk layar kecil (HP) */
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: repeat(1, minmax(420px, 1fr)); /* 1 grid pada layar kecil */
+
+    }
+  }
+
+
+  /* Aturan untuk memastikan 4 grid pada layar besar */
+  @media (min-width: 1024px) {
+    .grid-container {
+      grid-template-columns: repeat(2, minmax(420px, 1fr)); /* 4 grid pada layar besar */
+
+    }
+  }
+
+   /* Aturan untuk memastikan 4 grid pada layar besar */
+   @media (min-width: 1280px) {
+    .grid-container {
+      grid-template-columns: repeat(3, minmax(420px, 1fr)); /* 4 grid pada layar besar */
+    }
+  }
+
+  /* Aturan untuk memastikan 4 grid pada layar besar */
+  @media (min-width: 1536px) {
+    .grid-container {
+      grid-template-columns: repeat(3, minmax(420px, 1fr)); /* 4 grid pada layar besar */
+      
+    }
+  }
