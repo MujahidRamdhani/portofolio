@@ -8,6 +8,7 @@ import foto from "../../assets/landingpage.png"
 import furnicraft from "../../assets/furnicraft.png"
 import palmMapping from "../../assets/palmmapping.png"
 import programbantuan from "../../assets/programbantuan.png"
+import survey from "../../assets/survey.png"
 export function Project() {
   const data = [
     {
@@ -23,7 +24,13 @@ export function Project() {
       points: ["build api", "express Js", "react Js", "mysql", "docker", "integration email notification breevo", "tailwind" , "deployment oracle cloud"],
     },
     {
-      id: 3,
+      id: 4,
+      image: survey,
+      title: "Sistem survey kepuasan masyarakat terhadap pelayanan kantor kemenag kota bandung",
+      points: ["php", "tailwind", "mysql", "chartjs"],
+    },
+    {
+      id: 4,
       image: furnicraft,
       title: "Ecommerce FURNICRAFT",
       points: ["Laravel", "Bootstrap", "Integration payment gateway midtrans", "integration raja ongkir", "mysql",],

@@ -15,7 +15,7 @@ import git from '../../assets/git.svg';
 import ScrollAnimation from 'react-animate-on-scroll';
 import ts from '../../assets/ts.svg';
 import mysqli from '../../assets/mysqli.svg';
-import hf from '../../assets/hf.svg'
+import hf from '../../assets/hf.png'
 const images = [
 	pytorch,
 	laravel,
@@ -26,7 +26,8 @@ const images = [
 	ts,
 	opencv,
 	git,
-	mysqli
+	mysqli,
+	hf
 	
 ];
 export function About() {
